@@ -33,8 +33,8 @@
                 </div>
                 <button onclick="capturePhoto();">Capture Photo</button> <br>
     <button onclick="capturePhotoEdit();">Capture Editable Photo</button> <br>
-    <button onclick="getPhoto(pictureSource.PHOTOLIBRARY);">From Photo Library</button><br>
-    <button onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">From Photo Album</button><br>
+    <!--<button onclick="getPhoto(pictureSource.PHOTOLIBRARY);">From Photo Library</button><br>
+    <button onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">From Photo Album</button><br>-->
     <img style="display:none;width:60px;height:60px;" id="smallImage" src="" />
     <img style="display:none;" id="largeImage" src="" />
 
@@ -49,6 +49,35 @@
             <div class="col-md-4"></div>
 
          </div>
+
+       <!-- <ul class="b-board-list">
+
+            <li class="b-board-list__item" ng-repeat="game in games | orderByMyTeam:'Blue Jays'">
+
+                <div class="b-board-list__box">
+                    <div ng-class="{ 'b-board-list__box__item_active': game.linescore.r.home > game.linescore.r.away }">
+                        {{game.home_team_name}}
+                        <span class="b-board-list__box__score">{{game.linescore.r.home}}</span>
+                    </div>
+                    <div ng-class="{ 'b-board-list__box__item_active': game.linescore.r.home < game.linescore.r.away }">
+                        {{game.away_team_name}}
+                        <span class="b-board-list__box__score">{{game.linescore.r.away}}</span>
+                    </div>
+                    <div>{{game.status.status}}</div>
+                </div>
+
+            </li>
+
+        </ul>-->
+
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="app/vendors/jquery/dist/jquery.min.js"></script>
+
+    <script src="app/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="app/vendors/angular/angular.min.js"></script>
+    <script src="app/vendors/angular-resource/angular-resource.min.js"></script>
+    <script src="app/scripts/app.js"></script>
 
 <script type="text/javascript" charset="utf-8">
 
@@ -138,34 +167,5 @@
     }
 
     </script>
-       <!-- <ul class="b-board-list">
-
-            <li class="b-board-list__item" ng-repeat="game in games | orderByMyTeam:'Blue Jays'">
-
-                <div class="b-board-list__box">
-                    <div ng-class="{ 'b-board-list__box__item_active': game.linescore.r.home > game.linescore.r.away }">
-                        {{game.home_team_name}}
-                        <span class="b-board-list__box__score">{{game.linescore.r.home}}</span>
-                    </div>
-                    <div ng-class="{ 'b-board-list__box__item_active': game.linescore.r.home < game.linescore.r.away }">
-                        {{game.away_team_name}}
-                        <span class="b-board-list__box__score">{{game.linescore.r.away}}</span>
-                    </div>
-                    <div>{{game.status.status}}</div>
-                </div>
-
-            </li>
-
-        </ul>-->
-
-    </div>
-    <script type="text/javascript" src="cordova.js"></script>
-    <script src="app/vendors/jquery/dist/jquery.min.js"></script>
-
-    <script src="app/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="app/vendors/angular/angular.min.js"></script>
-    <script src="app/vendors/angular-resource/angular-resource.min.js"></script>
-    <script src="app/scripts/app.js"></script>
-
 </body>
 </html>
