@@ -3,8 +3,7 @@
         <description>
             A sample Apache Cordova application that display the view of the Tim hortons waiting line.
         </description>
-        <author email="catherineborykina@gmail.com" href="http://phonegap.com">
-            Alex yan
+        <author email="catherineborykina@gmail.com" >
         </author>
         <content src="index.html" />
         <access origin="*" />
