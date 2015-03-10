@@ -1,0 +1,127 @@
+/* my reset */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+::-webkit-input-placeholder {
+    color: #333;
+}
+::-moz-placeholder {
+    color: #333;
+}
+:-ms-input-placeholder {
+    color: #333;
+}
+input:-moz-placeholder {
+    color: #333;
+}
+input,
+button {
+    border: none;
+    text-shadow: none;
+}
+input::-ms-clear {
+    display: none;
+}
+a {
+    text-decoration: none;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+body {
+    font: normal 14px / 1 "Arial";
+    color: #333;
+   /* min-height: 100%;
+    position: relative;*/
+}
+body,
+html {
+    height: 100%;
+}
+input {
+    font-size: 12px;
+    color: #333;
+    font-weight: normal;
+    background-color: #fff;
+    border: 1px solid #c2c2c2;
+    padding: 0 10px;
+    border-radius: 4px;
+    height: 33px;
+    outline: none;
+}
+.ng-invalid.ng-dirty {
+    border-color: red;
+}
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+    display: none !important;
+}
+/*
+    
+*/
+body {
+    background-image: url(http://colourlovers.com.s3.amazonaws.com/images/patterns/4136/4136591.png?1391942692);
+}
+p {
+    color : black;
+    font-style: italic;
+}
+.sent_form {
+    bottom :2px;
+    position: fixed;
+}
+.b-wrapper {
+    
+    /*background-color: #000;
+    
+     overflow-y: auto;
+    overflow-x: hidden;
+    height: 480px;
+    width: 300px;*/
+    border: 1px solid black;
+}
+.b-header {
+    text-align: center;
+    padding: 10px 10px;
+}
+.b-header__title {
+    color: black;
+    font: normal 18px/20px "Arial";
+}
+.b-btn {
+    color: black;
+    font: normal 20px/20px "Arial";
+    background-color: transparent;
+    cursor: pointer;
+}
+.b-btn:hover {
+    color: #ff0000;
+}
+.b-board-list {
+    color: #fff;
+    font: normal 16px/22px "Arial";
+}
+.b-board-list__item {
+    border-top: 1px solid #fff;
+    padding: 12px 10px;
+}
+.b-board-list__box {
+
+}
+.b-board-list__box__item {
+
+}
+.b-board-list__box__item_active {
+    font-weight: bold;
+}
+.b-board-list__box__score {
+    float: right;
+}

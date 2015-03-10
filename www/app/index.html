@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html ng-app="App">
+<head>
+    <meta charset="utf-8">
+    <title>Diary</title>
+    
+    <!--<link rel="stylesheet" type="text/css" href="styles/reset.css"/>-->
+    <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/app.css"/>
+
+</head>
+<body>
+
+    <div class="container-fluid" ng-controller="DiaryCtrl">
+
+        <div class="row">
+            <div class="col xs-12 col-md-4"></div>
+
+
+
+            <div class="col xs-12 col-md-4">
+
+                 <div class="b-header">
+                    <button class="b-btn" ng-click="getNext(date.prev)"><</button>
+                    <span class="b-header__title">{{date.current | date:'EEE MMM dd yyyy'}}</span>
+                    <button class="b-btn" ng-click="getNext(date.next)">></button>
+                </div>
+
+                
+                <div ng-repeat="story in dairy.story" >
+                    <p>{{story}}</p>
+                </div>
+
+
+                <div class="col xs-12 col-md-4 sent_form">
+                    <div class="input-group">
+                      <textarea rows="2" class="form-control" placeholder="story" aria-describedby="basic-addon2" ng-model="dairy.edit"></textarea>
+                      <span ng-click="addStory()" class="input-group-addon btn btn-default" id="basic-addon2">Sent</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4"></div>
+
+         </div>
+
+<div class="row">
+  <div class="col-xs-6">
+         
+
+    </div></div>
+       <!-- <ul class="b-board-list">
+
+            <li class="b-board-list__item" ng-repeat="game in games | orderByMyTeam:'Blue Jays'">
+
+                <div class="b-board-list__box">
+                    <div ng-class="{ 'b-board-list__box__item_active': game.linescore.r.home > game.linescore.r.away }">
+                        {{game.home_team_name}}
+                        <span class="b-board-list__box__score">{{game.linescore.r.home}}</span>
+                    </div>
+                    <div ng-class="{ 'b-board-list__box__item_active': game.linescore.r.home < game.linescore.r.away }">
+                        {{game.away_team_name}}
+                        <span class="b-board-list__box__score">{{game.linescore.r.away}}</span>
+                    </div>
+                    <div>{{game.status.status}}</div>
+                </div>
+
+            </li>
+
+        </ul>-->
+
+    </div>
+    <script src="vendors/jquery/dist/jquery.min.js"></script>
+
+    <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="vendors/angular/angular.min.js"></script>
+    <script src="vendors/angular-resource/angular-resource.min.js"></script>
+    <script src="scripts/app.js"></script>
+
+</body>
+</html>
